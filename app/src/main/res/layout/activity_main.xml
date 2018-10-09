@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE0FF"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Welcome to"
+            android:textColor="#0C70CC"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="80sp"
+            android:fontFamily="@font/textmeone_regular"
+            android:rotation="-5"
+            android:text="Represent!"
+            android:textColor="#0009D9"
+            android:textSize="70sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10sp"
+                android:layout_marginTop="230sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Zipcode:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/zipcode_input"
+                android:paddingLeft="10sp"
+                android:layout_width="270sp"
+                android:layout_height="40sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="265sp"
+                android:background="@drawable/rounded_corner"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/search_by_zipcode"
+                android:layout_width="210sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="320sp"
+                android:background="@drawable/rounded_corner_button"
+                android:fontFamily="@font/opensans_semibold"
+                android:textSize="15sp"
+                android:text="Search by Zipcode"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="390sp"
+                android:fontFamily="@font/opensans_extrabold"
+                android:text="_____________  or  ______________"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/search_by_current_location"
+                android:layout_width="280sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="450sp"
+                android:background="@drawable/rounded_corner_button"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Search by Current Location"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/search_by_random_location"
+                android:layout_width="280sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="550sp"
+                android:background="@drawable/random_button"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Search by Random Location"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
